@@ -25,7 +25,7 @@ gulp.task('build', function() {
 
     // Compile Typescript
     tsProject.src()
-        .pipe(ts(tsProject)).js
+        .pipe(tsProject()).js
         .pipe(gulp.dest(paths.dist));
 
     // Copy CSS

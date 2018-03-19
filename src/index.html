@@ -17,7 +17,12 @@
 <script src="node_modules/systemjs/dist/system.js"></script>
 <script>
     System.config({
-        defaultJSExtensions: true
+      packages: {
+        '.': {
+          defaultExtensions: 'js'
+        }
+      }
+
     });
 
     System
